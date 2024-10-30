@@ -1,1 +1,2 @@
 Testi 1
+Testi git add -p
