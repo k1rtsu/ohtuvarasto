@@ -6,3 +6,6 @@ __pycache__/
 
 # Ignore .pytest_cache directories
 .pytest_cache/
+
+#ignore Ds store
+.DS_Store
