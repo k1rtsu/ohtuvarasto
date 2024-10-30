@@ -9,3 +9,7 @@ __pycache__/
 
 #ignore Ds store
 .DS_Store
+
+#ignore .coverage
+.coverage
+htmlcov
