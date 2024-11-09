@@ -16,10 +16,16 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          
       - name: Install Poetry
         run: pip install poetry
+        
       - name: Install dependencies
         run: poetry install
+        
+      - name: Run Pylint        
+        run: poetry run pylint src
+        
       - name: Run tests
         run: poetry run coverage run --branch -m pytest
 
@@ -30,6 +36,7 @@ jobs:
 
       - name: Coverage report
         run: poetry run coverage xml
+        
       - name: Coverage report to Codecov
         uses: codecov/codecov-action@v4
         env:
