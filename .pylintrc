@@ -23,6 +23,6 @@ max-line-length= 80
 max-nested-blocks=2 
 
 [DESIGN]
-max-statemen=15
+max-statements=15
 max-returns=3
 
