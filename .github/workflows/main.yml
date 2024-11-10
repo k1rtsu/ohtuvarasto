@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
         
-      - name: Run Pylint        
+      - name: Lint        
         run: poetry run pylint src
         
       - name: Run tests
